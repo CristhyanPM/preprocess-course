@@ -1,10 +1,28 @@
 :root{
   --pug-color-1: #efcca3;
   --pug-color-2: #56332b;
+  --less-color-1: #fff;
+  --less-color-2: #173051;
+  --sass-color-1: #cd669a;
+  --sass-color-2: #8123ff;
+  --stylus-color-1: #b3d107;
+  --stylus-color-2: #727272;
+  --platzi-color: #97c93e;
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(150deg, rgb(0, 0, 0) 10%, rgb(3, 43, 95) 80%);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
 }
