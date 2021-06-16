@@ -1,4 +1,7 @@
 *.png
 *.jpg
 *.webp
+*.ai
+*.svg
 PUG/platzigames/
+diseno/

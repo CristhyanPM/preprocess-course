@@ -1,0 +1,10 @@
+:root{
+  --pug-color-1: #efcca3;
+  --pug-color-2: #56332b;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
