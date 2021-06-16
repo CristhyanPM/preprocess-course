@@ -8,6 +8,7 @@
   --stylus-color-1: #b3d107;
   --stylus-color-2: #727272;
   --platzi-color: #97c93e;
+  --boton-alternative: #294596;
 }
 
 *{
@@ -19,10 +20,58 @@
 html {
   font-size: 62.5%;
 }
+
 body {
+  position: relative;
   background: linear-gradient(150deg, rgb(0, 0, 0) 10%, rgb(3, 43, 95) 80%);
-  height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
+  width: 100%;
+  min-width: 32rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 9.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: .5rem;
+}
+
+header h1 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+header h1 .platzi{
+  color: var(--platzi-color);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .boton {
+  margin-top: .5rem;
+  display: inline-block;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+}
+
+
+
+
+main {
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  margin: 0 auto;
 }
