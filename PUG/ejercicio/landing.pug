@@ -1,0 +1,33 @@
+-let laterales= ["ACERCA", "NOTICIAS", "CONTACTO"]
+mixin lista(elementos,clase)
+  ul(class= clase) 
+    each elemento in elementos
+      li
+        a(href="#") #{elemento}
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./estilos.css")
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;700&display=swap", rel="stylesheet")
+    title PLATZIGAMES
+  body
+    header 
+      h1 PLATZIGAMES 
+      a.button(href="#")  REGISTRO 
+    main 
+      section.sidebar 
+        h2 MENU 
+        +lista(laterales,"sidebar__list")
+      section.principal 
+        h2 TITULO PRINCIPAL 
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolorem sint optio laborum similique, incidunt inventore perferendis quia corrupti distinctio pariatur, esse voluptatem porro vel. Tenetur distinctio dolores vero asperiores.
+        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet vel a vitae cumque corrupti incidunt minus omnis, nesciunt aliquid ad ratione recusandae nihil sint porro aspernatur, ea adipisci, mollitia quam?
+        a.button(href="#") VER MAS
+    footer 
+      h1 PLATZIGAMES
+      +lista(laterales,"footer__list")
