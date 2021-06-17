@@ -28,10 +28,10 @@ html {
 
 body {
   position: relative;
-  background: linear-gradient(150deg, rgb(0, 0, 0) 10%, rgb(3, 43, 95) 80%);
+  background: linear-gradient(160deg, rgb(0, 0, 0) 10%, rgb(3, 43, 95) 20%);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
+  /* height: 100%; */
   width: 100%;
   min-width: 32rem;
 }
@@ -45,7 +45,7 @@ header {
   /* flex-wrap: wrap; */
   align-items: center;
   /* justify-content: space-evenly; */
-  margin: 1rem auto .5rem;
+  margin: 1.5rem auto .5rem;
 }
 
 header h1 {
@@ -53,6 +53,7 @@ header h1 {
   width: 100%;
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 header h1 .platzi{
@@ -74,7 +75,7 @@ a {
 .boton__container .boton {
   display: inline-block;
   margin-top: .5rem;
-  padding: .5rem;
+  padding: 1rem .5rem;
   width: 14rem;
   text-align: center;
   font-size: 1.5rem;
@@ -89,8 +90,73 @@ a {
 }
 
 main {
-  position: absolute;
+  /* position: absolute; */
   /* top: 10rem; */
   width: 100%;
-  margin: 0 auto;
+  color: white;
+}
+
+main .container {
+  margin: 3rem auto 0;
+  min-width: 28rem;
+  width: 80%;
+  max-width: 60rem;
+  /* text-align: center; */
+}
+
+main .container__header {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container__header--title {
+  margin-right: 1rem;
+}
+
+main .container__header--logo {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+main .pug--logo {
+  background-image: url("https://i.ibb.co/qJTYY9d/pug-logo.png");
+}
+main .less--logo {
+  background-image: url("https://i.ibb.co/b3f6Yps/less-logo.png");
+}
+main .sass--logo {
+  background-image: url("https://i.ibb.co/SPCbY1L/sass-logo.png");
+}
+main .stylus--logo {
+  background-image: url("https://i.ibb.co/HDfrKcr/stylus-logo.png");
+}
+
+/* "https://i.ibb.co/qJTYY9d/pug-logo.png" */
+/* "https://i.ibb.co/b3f6Yps/less-logo.png" */
+/* "https://i.ibb.co/SPCbY1L/sass-logo.png" */
+/* "https://i.ibb.co/HDfrKcr/stylus-logo.png" */
+
+main .container__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__card .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: 15rem;
+  font-size: 1.6rem;
+  background-color: var(--stylus-color-2);
 }
