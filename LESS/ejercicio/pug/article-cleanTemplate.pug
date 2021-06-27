@@ -1,0 +1,46 @@
+-let headline = "Titulo General";
+-let imageCover = "Agregar un link";
+-let authorName = "Autor";
+-let authorImage = "link";
+-let lead = "Texto llamativo";
+-let introBody = ["1er Parrafo","2do Parrafo"];
+-let subtittles = ["Subtitulo A","SubtituloB", "Agrega los subtitulos que necesites"];
+-let contentA = ["Contenido del subtitulo A"];
+-let contentB = ["1er Parrafo del contenido B <br><br> Separar con br en caso de tener mas de un parrafo"];
+-let subtittlesBoby = [""+contentA,""+contentB];
+-let n = 0
+
+mixin cover(path, tag)
+  span
+    img(src=""+path, alt=""+tag, title=""+tag)
+
+mixin introContent(paragraph)
+  each text in paragraph 
+    p.news-story__underlead!= text
+
+mixin subtittleContent(header, paragraph)
+  each subtittle in header
+    .news-story__subtittle-box
+      h3 #{subtittle}
+      p!= paragraph[n++]
+
+//- Pruebas de loop para anidar subtitulo y contenido
+  //- -let i = 0
+  //- mixin textContent(abc)
+  //-     each xyz in abc 
+  //-       if 
+
+  //- mixin subtittleContent(header, paragraph)
+  //-   each sub in header
+  //-     .block
+  //-       h3 #{sub}
+  //-       p #{paragraph[n++]}
+
+  //- mixin prueba(content)
+  //-   each a in content
+  //-     p #{a}
+
+  //- mixin subtittleContent(header, paragraph)
+  //-   while n < 2
+  //-     .block
+  //-       h3 #{header[n++]}

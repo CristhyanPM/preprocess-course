@@ -1,12 +1,13 @@
--let headline = "Cyberpunk 2077 tiene tres prologos distintos";
--let imageCover = "https://i.ibb.co/Kz1yZRF/intro.jpg";
--let authorName = "Autor Autor Autor Autor asdasdasdasd";
--let authorImage = "../images/avatar.jpg";
--let lead = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id.";
--let introBody = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla."];
--let subtittles = ["A","B"];
--let contentA = ["a Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla."];
--let contentB = ["b1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla. <br><br> b2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla."];
+-let headline = "Cyberpunk 2077 tiene tres prólogos distintos";
+-let imageCover = "https://i.ibb.co/M5XNTWM/intro.jpg";
+-let authorName = "3D Juegos";
+-let authorImage = "https://i.ibb.co/TH9Yd8j/3djuegos-logo.png";
+-let lead = "En Cyberpunk 2077 los jugadores podran seleccionar entre tres historias de origen diferentes, cada una presentando una ubicacion de partida distinta para su personaje";
+-let introBody = ["Conversando con VG247,el disenador Pawel Sasko explico un sistema que CD Projekt RED llama Lifepaths (caminos de vida),que en la practica suena muy similar a las historias sobre el origendel personaje de Dragon Age: Origins.","Uno de estos caminos de vida comienza en los Badlands, las aridas tierras que rodean Night City (suponemos que es el Nomad).CD Projekt RED no ha ofrecido descripcion de las otras areas,pero parece sensato suponer que los personajes de Corpo podrian comenzar en un distrito mas corporativo de Night City,mientras que Street Kids podrian provenir de areas de barrios marginales"];
+//- -let listContainer = ["Worms Rumble (Nube, Consolas y PC) ID@Xbox – Ya disponible.","Iron Harvest (PC) – 24 de junio.","Need for Speed: Hot Pursuit Remastered (Consolas y PC) EA Play – 24 de junio.","Prodeus (Game Preview) (PC) ID@Xbox – 24 de junio.","Banjo-Kazooie: Nuts and Bolts (Nube) – 1 de julio.","Bug Fables: The Everlasting Sapling (Cloud, Consolas y PC) ID@Xbox – 1 de julio.","Gang Beasts (Cloud, Consolas y PC) ID@Xbox – 1 de julio.","Immortal Realms: Vampire Wars (Nube, Consolas y PC) – 1 de julio.","Limbo (Nube, Consolas y PC) ID@Xbox – 1 de julio."]
+-let subtittles = ["NOTICIAS, FECHA DE LANZAMIENTO Y PLATAFORMAS DE CYBERPUNK 2077"];
+-let contentA = ["En otras noticias,recientemente descubrimos que CD Projekt RED tiene planes de desarroilar tres juegos Cyberpunk, y que Cyberpunk 2077 contara con tramas romanticas similares a las que vimos en The Witcher 3.Si el romance no es su estilo, no se preocupen,podran ser tan malvados como deseengracias a que Cyberpunk 2077 no tendra un sistema de moralidad.<br> <br> Cyberpunk 2077 se pondra disponible el 16deabril de 2020 y se lanzara en versiones para PC,PlayStation 4 y Xbox One."];
+//- -let contentB = ["Por otro lado, Microsoft también ha actualizado la lista de juegos que abandonan Xbox Game Pass durante este próximo 30 de junio. Son los siguientes."];
 -let subtittlesBoby = [""+contentA,""+contentB];
 -let n = 0
 
@@ -17,6 +18,11 @@ mixin cover(path, tag)
 mixin introContent(paragraph)
   each text in paragraph 
     p.news-story__underlead!= text
+
+//- mixin listGenerator(items) 
+//-   ul.list-container 
+//-     each item in items
+//-       li #{item}
 
 mixin subtittleContent(header, paragraph)
   each subtittle in header

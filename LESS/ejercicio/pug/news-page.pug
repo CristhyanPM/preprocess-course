@@ -19,11 +19,13 @@ block article
     section.news-story
       p.news-story__lead #{lead}
       +introContent(introBody)
+      //- +listGenerator(listContainer)
       +subtittleContent(subtittles, subtittlesBoby)
+      //- +listGenerator(listContainerB)
       //- +prueba(contentB)
     article.other-news
       h1.other-news__tittle NO TE PIERDAS...
       .card-container
-        +card("https://i.ibb.co/fMGxmpC/xbox.jpg", "Conoce las actualizaciones de XBOX GAME PASS", "A unas semanas de haber terminado el E3, Microsoft anunció la 1ra rotación de juegos que llega a Xbox")
-        +card("https://i.ibb.co/NL74YbD/fortnite.jpg", "Fortnite une fuerza con Stranger Things", "Portales hacia el Upside Down han aparecido dentro de Fortnite, y aunque no funcionan igual")
-        +card("https://i.ibb.co/X4B7kC2/cuphead.jpg", "Cuphead se atrasa hasta el año 2020", "Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento")
+        +card("https://i.ibb.co/VgrvBX9/xbox-banner.jpg", "Xbox Game Pass añade 9 nuevos juegos a su catálogo en julio", "Limbo o Banjo & Kazooie son algunas de las incorporaciones más destacadas para el servicio de Microsoft.","../html/xbox/news-page.html")
+        +card("https://i.ibb.co/xMWbt0Y/sonic-banner.jpg", "SEGA tiene planes para convertir a Sonic en un youtuber", "El mítico erizo azul de SEGA cumple 30 años y la firma nipona tiene muchos planes previstos: entre otros, ser VTuber.","../html/sonic/news-page.html")
+        +card("https://i.ibb.co/7tn56ww/among-us-banner.jpg", "Among Us paga el precio del éxito: sus autores acabaron agotados", "El videojuego acaba de presentar nuevos contenidos, pero hubo días en que desde Innersloth no podían más.","../html/among-us/news-page.html")

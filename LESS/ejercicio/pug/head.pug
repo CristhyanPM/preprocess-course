@@ -1,12 +1,12 @@
 include article.pug
-mixin card(image, titulo, parrafo)
-  a(href="#").card
+mixin card(image, titulo, parrafo, linkPage)
+  a(href=""+linkPage).card
     figure.card__image 
       img(src=""+image)
     section.card__text 
       p.card__text--tittle.upper-text-1 #{titulo}
       p #{parrafo}
-      p Leer más
+      p.card__text--more Leer más
 doctype html
 html(lang="en")
   head
