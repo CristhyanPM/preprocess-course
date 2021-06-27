@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/mobiles.css">
+    <title>Gaming News</title>
+  </head>
+  <body> 
+    <header class="masthead"> 
+      <p>Ejercicio Less</p>
+      <label class="switcher" for="dark-mode">
+        <input type="checkbox" id="dark-mode" name="switcher" onclick="document.body.classList.toggle('dark-mode')"><span class="check"></span>
+      </label>
+    </header>
+    <main> 
+      <section class="news-cover"><span><img src="../images/intro.jpg" alt="Descripcion" title="Descripcion"/></span>
+        <div class="news-cover__new">
+          <h3 class="box-tittle">Noticia</h3>
+          <h1 class="news-cover__new--tittle">Cyberpunk 2077 tiene tres prologos distintos</h1>
+        </div>
+        <div class="news-cover__author"> <img src="../images/avatar.jpg">
+          <div class="news-cover__author--box">
+            <h3 class="box-tittle">Autor </h3>
+            <p class="news-cover__author--box-name upper-text-1">Autor Autor Autor Autor asdasdasdasd</p>
+          </div>
+        </div>
+      </section>
+      <section class="news-story">
+        <p class="news-story__lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id.</p>
+        <p class="news-story__underlead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.</p>
+        <p class="news-story__underlead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.</p>
+        <div class="news-story__subtittle-box">
+          <h3>A</h3>
+          <p>a Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.</p>
+        </div>
+        <div class="news-story__subtittle-box">
+          <h3>B</h3>
+          <p>b1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla. <br><br> b2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.</p>
+        </div>
+      </section>
+      <article class="other-news">
+        <h1 class="other-news__tittle">NO TE PIERDAS...</h1>
+        <div class="card-container"><a class="card" href="#">
+            <figure class="card__image"> <img src="../images/xbox.jpg"/></figure>
+            <section class="card__text"> 
+              <p class="card__text--tittle upper-text-1">Conoce las actualizaciones de XBOX GAME PASS</p>
+              <p>A unas semanas de haber terminado el E3, Microsoft anunció la 1ra rotación de juegos que llega a Xbox</p>
+              <p>Leer más</p>
+            </section></a><a class="card" href="#">
+            <figure class="card__image"> <img src="../images/fortnite.jpg"/></figure>
+            <section class="card__text"> 
+              <p class="card__text--tittle upper-text-1">Fortnite une fuerza con Stranger Things</p>
+              <p>Portales hacia el Upside Down han aparecido dentro de Fortnite, y aunque no funcionan igual</p>
+              <p>Leer más</p>
+            </section></a><a class="card" href="#">
+            <figure class="card__image"> <img src="../images/cuphead.jpg"/></figure>
+            <section class="card__text"> 
+              <p class="card__text--tittle upper-text-1">Cuphead se atrasa hasta el año 2020</p>
+              <p>Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento</p>
+              <p>Leer más</p>
+            </section></a>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

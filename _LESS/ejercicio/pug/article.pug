@@ -1,0 +1,47 @@
+-let headline = "Cyberpunk 2077 tiene tres prologos distintos";
+-let imageCover = "/intro.jpg";
+-let imageTag = "Descripcion"
+-let authorName = "Autor Autor Autor Autor asdasdasdasd";
+-let authorImage = "../images/avatar.jpg";
+-let lead = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id.";
+-let introBody = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla."];
+-let subtittles = ["A","B"];
+-let contentA = ["a Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla."];
+-let contentB = ["b1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla. <br><br> b2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est quasi vel ratione id natus ipsam illo repudiandae expedita repellat! Dolore laudantium nisi nostrum provident quibusdam repudiandae voluptate sapiente nulla."];
+-let subtittlesBoby = [""+contentA,""+contentB];
+-let n = 0
+
+mixin cover(path, tag)
+  span
+    img(src="../images"+path, alt=""+tag, title=""+tag)
+
+mixin introContent(paragraph)
+  each text in paragraph 
+    p.news-story__underlead!= text
+
+mixin subtittleContent(header, paragraph)
+  each subtittle in header
+    .news-story__subtittle-box
+      h3 #{subtittle}
+      p!= paragraph[n++]
+
+//- Pruebas de loop para anidar subtitulo y contenido
+  //- -let i = 0
+  //- mixin textContent(abc)
+  //-     each xyz in abc 
+  //-       if 
+
+  //- mixin subtittleContent(header, paragraph)
+  //-   each sub in header
+  //-     .block
+  //-       h3 #{sub}
+  //-       p #{paragraph[n++]}
+
+  //- mixin prueba(content)
+  //-   each a in content
+  //-     p #{a}
+
+  //- mixin subtittleContent(header, paragraph)
+  //-   while n < 2
+  //-     .block
+  //-       h3 #{header[n++]}

@@ -3,5 +3,8 @@
 *.webp
 *.ai
 *.svg
+*.json
+*.config
 PUG/platzigames/
 diseno/
+_LESS/clase

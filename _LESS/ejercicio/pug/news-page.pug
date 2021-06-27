@@ -1,0 +1,29 @@
+extends ./head.pug
+block article 
+  header.masthead 
+    p Ejercicio Less
+    label.switcher(for="dark-mode")
+      input(type="checkbox" id="dark-mode" name="switcher" onclick="document.body.classList.toggle('dark-mode')")
+      span.check
+  main 
+    section.news-cover
+      +cover(imageCover,imageTag)
+      .news-cover__new
+        h3.box-tittle Noticia
+        h1.news-cover__new--tittle #{headline}
+      .news-cover__author 
+        img(src=""+authorImage)
+        .news-cover__author--box
+          h3.box-tittle Autor 
+          p.news-cover__author--box-name.upper-text-1 #{authorName}
+    section.news-story
+      p.news-story__lead #{lead}
+      +introContent(introBody)
+      +subtittleContent(subtittles, subtittlesBoby)
+      //- +prueba(contentB)
+    article.other-news
+      h1.other-news__tittle NO TE PIERDAS...
+      .card-container
+        +card("../images/xbox.jpg", "Conoce las actualizaciones de XBOX GAME PASS", "A unas semanas de haber terminado el E3, Microsoft anunció la 1ra rotación de juegos que llega a Xbox")
+        +card("../images/fortnite.jpg", "Fortnite une fuerza con Stranger Things", "Portales hacia el Upside Down han aparecido dentro de Fortnite, y aunque no funcionan igual")
+        +card("../images/cuphead.jpg", "Cuphead se atrasa hasta el año 2020", "Los miembros de Studio MDHR revelan la razón detrás del atraso de la fecha de lanzamiento")

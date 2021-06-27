@@ -164,6 +164,11 @@ main .container__card {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.container__card .less--ejercicio {
+  background-image: url("https://i.ibb.co/wgMQP5W/ejercicio-less.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .container__card .card__click {
   display: flex;
